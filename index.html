@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formpress — Simple, flexible forms for WordPress</title>
+  <meta name="description" content="Formpress — create contact forms, surveys and feedback with an easy, lightweight WordPress plugin." />
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --muted:#6b7280; --accent:#0ea5a3; --accent-2:#0369a1; --max:1100px;
+      --radius:12px; --gap:20px; --pad:24px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.5;margin:0;background:var(--bg);color:#0f172a}
+    .wrap{max-width:var(--max);margin:36px auto;padding:0 20px}
+
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    h1{font-size:28px;margin:0}
+    .tag{color:var(--muted);margin-top:6px}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:center;margin-top:22px}
+    .card{background:var(--card);border-radius:var(--radius);padding:var(--pad);box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    a.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .primary{background:var(--accent);color:white}
+    .ghost{border:1px solid #e6eef0;color:var(--accent-2);background:transparent}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+    .feature{padding:18px;border-radius:10px;background:linear-gradient(180deg,rgba(14,165,163,0.04),transparent)}
+    .feature h3{margin:0 0 6px 0}
+    pre{background:#0b1220;color:#e6f3f3;padding:12px;border-radius:8px;overflow:auto;font-size:13px}
+
+    .docs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+
+    footer{color:var(--muted);font-size:13px;margin-top:34px;padding:20px 0}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .docs{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">FP</div>
+        <div>
+          <h1>Formpress</h1>
+          <div class="tag">Simple, flexible forms for WordPress — fast, extensible, and privacy-friendly.</div>
+        </div>
+      </div>
+      <nav aria-label="top">
+        <a href="#quick-start" style="margin-right:12px;color:var(--accent-2);text-decoration:none">Quick start</a>
+        <a href="#docs" style="margin-right:12px;color:var(--muted);text-decoration:none">Docs</a>
+        <a class="ghost" href="https://github.com/teamformpress/docs.formpress" style="padding:8px 12px">Docs Repo</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h2>Build forms in minutes — deploy anywhere</h2>
+          <p class="tag">Create contact forms, feedback surveys, registration forms and more. Use shortcodes or the Formpress block in Gutenberg.</p>
+
+          <div class="cta">
+            <a class="btn primary" href="#quick-start">Get started</a>
+            <a class="btn ghost" href="#docs">Read the docs</a>
+          </div>
+
+          <div style="margin-top:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+            <div>
+              <strong>Lightweight</strong>
+              <div class="tag">Minimal dependencies, optimized for speed.</div>
+            </div>
+            <div>
+              <strong>Integrations</strong>
+              <div class="tag">reCAPTCHA, SMTP, Zapier and many more.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px">
+            <strong>Example shortcode</strong>
+            <pre>[formpress id="1234" title="Contact Form"]</pre>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Status</h3>
+          <p class="tag">Current release: <strong>v1.2.0</strong> — compatible with WordPress 6.5+</p>
+
+          <h3 style="margin-top:12px">Quick links</h3>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#builder">Form Builder</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="https://github.com/teamformpress/docs.formpress">Docs repo on GitHub</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section class="features" aria-label="features">
+      <div class="feature card">
+        <h3>Drag & Drop Builder</h3>
+        <div class="tag">Visual builder with responsive controls and template library.</div>
+      </div>
+      <div class="feature card">
+        <h3>Flexible Notifications</h3>
+        <div class="tag">Custom email templates, conditional routing, and attachments.</div>
+      </div>
+      <div class="feature card">
+        <h3>Privacy-first</h3>
+        <div class="tag">No tracking by default. GDPR-friendly features and IP anonymization.</div>
+      </div>
+    </section>
+
+    <section id="quick-start" class="card" style="margin-top:22px">
+      <h2>Quick Start</h2>
+      <ol>
+        <li>Install the plugin: <strong>Plugins → Add New → Search & Install "Formpress"</strong>.</li>
+        <li>Create a form: <strong>Forms → Add New</strong>. Add fields and save.</li>
+        <li>Publish: copy the shortcode and paste into a page or use the Formpress block.</li>
+        <li>Set up email under <em>Settings → Notifications</em>.</li>
+      </ol>
+
+      <p style="margin-top:6px">Need a clean website for docs? Enable GitHub Pages for <code>teamformpress/docs.formpress</code>.</p>
+    </section>
+
+    <section id="docs" class="docs" style="margin-top:18px">
+      <div class="card">
+        <h3>Docs — Getting started</h3>
+        <ul style="margin-top:6px">
+          <li><a href="#installation">Installation & Requirements</a></li>
+          <li><a href="#builder">Form Builder — fields & layout</a></li>
+          <li><a href="#notifications">Notifications & Email</a></li>
+          <li><a href="#integrations">Integrations</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Developer</h3>
+        <ul style="margin-top:6px">
+          <li><a href="#hooks">Actions & Filters</a></li>
+          <li><a href="#rest">REST API Reference</a></li>
+          <li><a href="#contribute">Contributing</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>Formpress — © Team Formpress. Open-source and community-driven.</div>
+        <div>
+          <a href="https://github.com/teamformpress/docs.formpress">Docs repo</a> •
+          <a href="https://github.com/teamformpress/formpress">Plugin repo</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
