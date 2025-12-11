@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Guide - FormPress Documentation</title>
+    <meta name="description" content="Contributing to FormPress: Coding standards, reporting issues, and translations.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                FormPress
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="installation.html">Installation</a>
+                <a href="developers.html" class="active">Developers</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://wordpress.org/plugins/formpress/" target="_blank" class="btn btn-primary"
+                    style="color: white; padding: 0.5rem 1rem;">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Developers Guide</h1>
+            <p>Learn how to contribute to FormPress and extend its functionality.</p>
+        </div>
+    </header>
+
+    <main class="container content-wrapper prose">
+        <p>Thank you for considering contributing to FormPress. This guide explains how you can contribute to the
+            project, report issues, and help with translations.</p>
+
+        <h2>Reporting Issues</h2>
+        <p>If you find a bug, please report it to our GitHub repository unless it is about a security vulnerability.
+            Creating an issue is always recommended, but for minor issues like correction of a typo, you can create a
+            pull request instead of an issue.</p>
+
+        <p>If you can fix an issue, create a pull request that links to the target issue.</p>
+
+        <blockquote>
+            <p><strong>Security Note:</strong> Security issues should not be discussed publicly. Please do not publish
+                them through GitHub or other channels. For security vulnerabilities, it is recommended you use the <a
+                    href="https://www.wordfence.com/threat-intel/vulnerabilities/submit" target="_blank">Wordfence
+                    vulnerability submission form</a>.</p>
+        </blockquote>
+
+        <h3>Before Reporting</h3>
+        <p>Prior to reporting an issue, please:</p>
+        <ol>
+            <li>Double-check if the issue is caused purely due to a bug of the plugin's latest version.</li>
+            <li>Confirm that the problem occurs even in a "vanilla" environment where only WordPress core, the default
+                theme, and FormPress are activated.</li>
+        </ol>
+
+        <h2>Coding Standards</h2>
+        <p>For WordPress plugin development, we follow strict coding standards. We ask you to respect these standards in
+            your contributions. FormPress follows WordPress coding standards to ensure long-term maintainability.</p>
+
+        <p>The plugin avoids unnecessary dependencies and keeps features isolated. Key aspects include:</p>
+        <ul>
+            <li>Adherence to <a href="https://developer.wordpress.org/coding-standards/">WordPress Coding Standards</a>.
+            </li>
+            <li>Validation and sanitization of all inputs and outputs.</li>
+            <li>Clear and documented code structure.</li>
+        </ul>
+
+        <h2>Contributing with Translations</h2>
+        <p>More than half of our users are non-English speakers. Maintaining translations for their languages is a great
+            help.</p>
+        <p>We use <a href="https://translate.wordpress.org/projects/wp-plugins/formpress/"
+                target="_blank">translate.wordpress.org</a> (GlotPress) to manage translations. This is a collaborative
+            platform where thousands of volunteers participate.</p>
+
+        <h2>Helping Other Users</h2>
+        <p>Coding is not the only way to contribute. Helping other users is also a respected contribution.</p>
+        <p>Users often come to the <a href="https://wordpress.org/support/plugin/formpress/" target="_blank">official
+                support forum</a>. If you can answer their questions, please do so!</p>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" style="max-width: 300px;">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+                        <i class="fa-solid fa-layer-group"></i>
+                        FormPress
+                    </a>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">
+                        A simple and flexible form builder for WordPress focused on simplicity, clarity, and
+                        extensibility.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Documentation</h4>
+                    <ul class="footer-links">
+                        <li><a href="installation.html">Installation</a></li>
+                        <li><a href="developers.html">Developers Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wordpress.org/support/plugin/formpress/" target="_blank">Support Forum</a>
+                        </li>
+                        <li><a href="https://profiles.wordpress.org/teamformpress/" target="_blank">Team FormPress</a>
+                        </li>
+                        <li><a href="https://github.com/teamformpress/docs.formpress" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FormPress. All rights reserved. Released under GPLv2 or later.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

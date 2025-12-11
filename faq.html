@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormPress - Simple & Flexible WordPress Form Builder</title>
-    <meta name="description"
-        content="FormPress is a lightweight form builder for WordPress focused on simplicity, clarity, and extensibility.">
+    <title>FAQ - FormPress Documentation</title>
+    <meta name="description" content="Frequently Asked Questions about FormPress.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -26,81 +24,58 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="installation.html">Installation</a>
                 <a href="developers.html">Developers</a>
-                <a href="faq.html">FAQ</a>
+                <a href="faq.html" class="active">FAQ</a>
                 <a href="https://wordpress.org/plugins/formpress/" target="_blank" class="btn btn-primary"
                     style="color: white; padding: 0.5rem 1rem;">Download</a>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="page-header">
         <div class="container">
-            <h1>The <span>Simple & Flexible</span><br>Form Builder for WordPress</h1>
-            <p>FormPress is a lightweight form builder focused on simplicity, clarity, and developer-friendly
-                extensibility.</p>
-            <div class="cta-buttons">
-                <a href="installation.html" class="btn btn-primary">Get Started</a>
-                <a href="https://wordpress.org/plugins/formpress/" target="_blank" class="btn btn-secondary">View on
-                    WordPress.org</a>
-            </div>
+            <h1>Frequently Asked Questions</h1>
+            <p>Common questions and answers about FormPress.</p>
         </div>
     </header>
 
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">Why FormPress?</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3>Simple Management</h3>
-                    <p>Create and manage forms directly from the WordPress admin area with a clean and intuitive
-                        interface.</p>
+    <main class="container content-wrapper">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Is FormPress intended to replace other form plugins?
+                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-cubes-stacked"></i>
-                    </div>
-                    <h3>Modular Design</h3>
-                    <p>Designed with a modular structure, allowing new features to be added progressively without
-                        breaking existing forms.</p>
+                <div class="accordion-content">
+                    <p>No. FormPress is designed as an alternative form builder with a focus on simplicity and
+                        extensibility.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h3>Developer Friendly</h3>
-                    <p>Built with developers in mind using clean architecture and following WordPress coding standards.
-                    </p>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Can FormPress be extended later?
+                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <h3>Lightweight</h3>
-                    <p>Avoids unnecessary dependencies and bloat, keeping your site fast and performant.</p>
+                <div class="accordion-content">
+                    <p>Yes. FormPress is built to allow additional features and integrations to be added in future
+                        versions.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <h3>Privacy Focused</h3>
-                    <p>No tracking, no external data sending, and no cookies by default. Your data stays yours.</p>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    Does FormPress send data to external services?
+                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fa-solid fa-puzzle-piece"></i>
-                    </div>
-                    <h3>Extensible</h3>
-                    <p>Easily extendable with hooks and filters, making it perfect for custom implementations.</p>
+                <div class="accordion-content">
+                    <p>No. By default, FormPress does not send submitted data to external servers.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
     <footer class="footer">
         <div class="container">

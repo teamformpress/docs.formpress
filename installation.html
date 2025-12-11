@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation - FormPress Documentation</title>
+    <meta name="description" content="How to install and activate FormPress on your WordPress site.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                FormPress
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="installation.html" class="active">Installation</a>
+                <a href="developers.html">Developers</a>
+                <a href="faq.html">FAQ</a>
+                <a href="https://wordpress.org/plugins/formpress/" target="_blank" class="btn btn-primary"
+                    style="color: white; padding: 0.5rem 1rem;">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Installation</h1>
+            <p>Get up and running with FormPress in minutes.</p>
+        </div>
+    </header>
+
+    <main class="container content-wrapper prose">
+        <h2>Requirements</h2>
+        <ul>
+            <li>WordPress 6.4 or higher</li>
+            <li>PHP 7.4 or higher</li>
+        </ul>
+
+        <h2>Automatic Installation</h2>
+        <ol>
+            <li>Log in to your WordPress admin dashboard.</li>
+            <li>Navigate to <strong>Plugins > Add New</strong>.</li>
+            <li>Search for "FormPress".</li>
+            <li>Click <strong>Install Now</strong> and then <strong>Activate</strong>.</li>
+        </ol>
+
+        <h2>Manual Installation</h2>
+        <ol>
+            <li>Download the plugin zip file from the <a href="https://wordpress.org/plugins/formpress/"
+                    target="_blank">WordPress Plugin Repository</a> or the repository.</li>
+            <li>Upload the `formpress` folder to the `/wp-content/plugins/` directory.</li>
+            <li>Activate the plugin through the <strong>Plugins</strong> screen in WordPress.</li>
+        </ol>
+
+        <blockquote>
+            <p><strong>Note:</strong> After activation, a new menu item "FormPress" will appear in your WordPress admin
+                dashboard, where you can start creating forms.</p>
+        </blockquote>
+
+        <h2>Upgrading</h2>
+        <p>
+            FormPress adheres to WordPress plugin standards. You can update it directly from the Dashboard > Updates
+            screen whenever a new version is released.
+        </p>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" style="max-width: 300px;">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+                        <i class="fa-solid fa-layer-group"></i>
+                        FormPress
+                    </a>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">
+                        A simple and flexible form builder for WordPress focused on simplicity, clarity, and
+                        extensibility.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Documentation</h4>
+                    <ul class="footer-links">
+                        <li><a href="installation.html">Installation</a></li>
+                        <li><a href="developers.html">Developers Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://wordpress.org/support/plugin/formpress/" target="_blank">Support Forum</a>
+                        </li>
+                        <li><a href="https://profiles.wordpress.org/teamformpress/" target="_blank">Team FormPress</a>
+                        </li>
+                        <li><a href="https://github.com/teamformpress/docs.formpress" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FormPress. All rights reserved. Released under GPLv2 or later.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
